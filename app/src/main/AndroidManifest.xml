@@ -9,10 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainAPIScreen"></activity>
+        <activity android:name=".foodActivity"
+            android:theme="@style/NoActionBar"></activity>
+        <activity android:name=".MainAPIScreen"
+            android:theme="@style/NoActionBar"/>
         <activity android:name=".httpRequestActivity" />
-        <activity android:name=".MainActivity"
-            android:theme = "@style/NoActionBar">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -22,5 +26,5 @@
     </application>
 
     <uses-permission android:name="android.permission.INTERNET" />
-
+    <uses-permission android:name="android.permission.VIBRATE" />
 </manifest>
