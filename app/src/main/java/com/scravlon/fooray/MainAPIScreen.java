@@ -53,7 +53,7 @@ public class MainAPIScreen extends AppCompatActivity {
             @Override
             public void onShake(int count) {
                 final Vibrator vibe = (Vibrator) MainAPIScreen.this.getSystemService(Context.VIBRATOR_SERVICE);
-                vibe.vibrate(80);
+                vibe.vibrate(150);
                 Toast.makeText(MainAPIScreen.this, "Cooking!!!", Toast.LENGTH_SHORT).show();
 
                 String url ="https://api.wegmans.io/meals/recipes?api-version=2018-10-18";
