@@ -30,7 +30,13 @@ public class MainAPIScreen extends AppCompatActivity {
 
     }
 
-
+    /**
+     * Random number 
+     * @return
+     */
+    public int random(){
+        return 0;
+    }
     public void apiCall(String urlReq){
         RequestQueue queue = Volley.newRequestQueue(this);
 
